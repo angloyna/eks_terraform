@@ -21,3 +21,14 @@ terraform command basics
 `init` - initializes a working directory containing terraform config files
 
 first command to run after writing a new terraform configuration
+
+
+`validate` - validates the configurations in the directory for
+syntax and consistency
+
+`plan` - creates an execution plan
+to achieve the desired state specified in the configurations
+
+`apply` - applies the changes to reach the desired state
+
+`destroy` - destroys the tf-managed infrastructure
