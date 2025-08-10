@@ -22,7 +22,6 @@ terraform command basics
 
 first command to run after writing a new terraform configuration
 
-
 `validate` - validates the configurations in the directory for
 syntax and consistency
 
@@ -32,3 +31,21 @@ to achieve the desired state specified in the configurations
 `apply` - applies the changes to reach the desired state
 
 `destroy` - destroys the tf-managed infrastructure
+
+
+Configuration Syntax 
+
+```
+# template
+
+<block_type> "<block_label>" "<block_label>" {
+    # block body
+    <IDENTIFIER> = <EXPRESSION> #argument
+}
+
+resource "aws_instance" "ec2demo" {
+    ami = ""
+    instance_type = "t2.micro
+}
+
+```
