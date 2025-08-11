@@ -49,3 +49,48 @@ resource "aws_instance" "ec2demo" {
 }
 
 ```
+
+
+top-level block types
+
+* tf settings
+* provider
+* resource
+* input variables
+* output values
+* local values
+* data sources
+* modules
+
+fundamental blocks:
+* terraform
+* providers
+* resources
+
+variable blocks:
+* input variables
+* output values
+* local values
+
+calling/referencing blocks:
+* data sources
+* modules
+
+Terraform fundamental blocks
+
+terraform block
+* special block to configure some behaviors
+* required terraform version
+* required providers
+* backend
+
+provider block
+* relies on provider to interact with remote systems
+* belongs to root module
+
+resource block
+* describes one or more infrastructure objects
+
+within a terraform block, only constant values can
+be used. arguments may not refer to named objects like resources, input variables, etc, nor can terraform language built-in functions be used
+
